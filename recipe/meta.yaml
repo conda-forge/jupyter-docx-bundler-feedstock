@@ -21,13 +21,16 @@ requirements:
     - setuptools >=38.6.0
     - setuptools_scm
   run:
+    - lxml
     - python
     - notebook >=5.0
     - pypandoc >=1.4
     - nbconvert >=5.5
+    - pandas
     - pandoc >=2.7
     - pandocfilters
     - requests
+    - tabulate
     - tornado
 
 test:
