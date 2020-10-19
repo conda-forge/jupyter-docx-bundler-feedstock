@@ -1,5 +1,5 @@
 {% set name = "jupyter-docx-bundler" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f2b27e2427a3ac78b9501388cae0f772b23fa55cc553caecf62e12f6dc1b9928
+  sha256: 5d3e2caa9676b09b15eae4d1788f8af80dc9e2b1d713f4cc0bfa3fb56e415017
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,13 +21,16 @@ requirements:
     - setuptools >=38.6.0
     - setuptools_scm
   run:
+    - lxml
     - python
     - notebook >=5.0
     - pypandoc >=1.4
     - nbconvert >=5.5
+    - pandas
     - pandoc >=2.7
     - pandocfilters
     - requests
+    - tabulate
     - tornado
 
 test:
