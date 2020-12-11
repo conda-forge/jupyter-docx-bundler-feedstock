@@ -1,5 +1,5 @@
 {% set name = "jupyter-docx-bundler" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5d3e2caa9676b09b15eae4d1788f8af80dc9e2b1d713f4cc0bfa3fb56e415017
+  sha256: 19def5e04b75ce4fdca27c7684c38358fbd1d03e8a6ef1a651cf8b68b8951620
 
 build:
   number: 0
