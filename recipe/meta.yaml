@@ -10,7 +10,7 @@ source:
   sha256: 33213a24baf4fe63e0665ddd2ad94e8b8a4701d58dfe23a070d70336304b0cdf
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -26,7 +26,7 @@ requirements:
     - nbconvert >=5.5
     - notebook >=5.0
     - pandas
-    - pandoc >=2.11
+    - pandoc >=2.11,<2.14
     - pandocfilters
     - pypandoc >=1.4
     - python
