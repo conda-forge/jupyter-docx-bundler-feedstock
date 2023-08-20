@@ -1,11 +1,11 @@
-About jupyter-docx-bundler
-==========================
+About jupyter-docx-bundler-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyter-docx-bundler-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/m-rossi/jupyter-docx-bundler
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyter-docx-bundler-feedstock/blob/main/LICENSE.txt)
 
 Summary: Jupyter bundler extension to export notebook as a docx file
 
